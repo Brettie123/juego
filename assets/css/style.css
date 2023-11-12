@@ -1,0 +1,40 @@
+body{
+    background-color: darkslategrey;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;   
+    margin-top: -100px;
+    margin-left: 460px;
+    margin-bottom: -180px;
+    width: 600px;
+}
+
+#vistaPrincipal{
+    width: 400px;
+    background-color: rgba(99, 13, 13, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#menu button{
+    
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    font-size: 60px;
+}
