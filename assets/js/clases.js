@@ -107,13 +107,13 @@ class Sprite {
       this.attackBox.position.x = this.position.x + this.attackBox.offset.x
       this.attackBox.position.y = this.position.y + this.attackBox.offset.y
   
-      //c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.height, this.attackBox.width)
+      c.fillRect(this.attackBox.position.x, this.attackBox.position.y, this.attackBox.height, this.attackBox.width)
       this.position.x += this.velocity.x
       this.position.y += this.velocity.y
   
-      if (this.position.y + this.height + this.velocity.y >= canvas.height - 100) {
+      if (this.position.y + this.height + this.velocity.y >= canvas.height - 300) {
         this.velocity.y = 0
-        this.position.y = 330
+        this.position.y = 150
       } else this.velocity.y += gravity
     }
   

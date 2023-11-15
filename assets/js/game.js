@@ -13,7 +13,8 @@ const background = new Sprite({
     x: 0,
     y: 0
   },
-  imageSrc: '../imagenes/background.png'
+  imageSrc: '../imagenes/background.png',
+  scale: 3.6
 })
 
 const shop = new Sprite({
@@ -21,7 +22,7 @@ const shop = new Sprite({
     x: 600,
     y: 128
   },
-  imageSrc: '../imagenes/shop.png',
+  imageSrc: '',
   scale: 2.75,
   framesMax: 6
 })
@@ -39,50 +40,50 @@ const player = new Fighter({
     x: 0,
     y: 0
   },
-  imageSrc: '.../imagenes/samuraiMack/Idle.png',
-  framesMax: 8,
-  scale: 2.5,
+  imageSrc: '../imagenes/Medieveal/Idle.png',
+  framesMax: 6,
+  scale: 2.7,
   offset: {
-    x: 215,
-    y: 157
+    x: 0,
+    y: 20
   },
   sprites: {
     idle: {
-      imageSrc: '../imagenes/samuraiMack/Idle.png',
-      framesMax: 8
+      imageSrc: '../imagenes/Medieveal/Idle.png',
+      framesMax: 6
     },
     run: {
-      imageSrc: '../imagenes/samuraiMack/Run.png',
+      imageSrc: '../imagenes/Medieveal/Run.png',
       framesMax: 8
     },
     jump: {
-      imageSrc: '../imagenes/samuraiMack/Jump.png',
+      imageSrc: '../imagenes/Medieveal/Jump.png',
       framesMax: 2
     },
     fall: {
-      imageSrc: '../imagenes/samuraiMack/Fall.png',
+      imageSrc: '../imagenes/Medieveal/Fall.png',
       framesMax: 2
     },
     attack1: {
-      imageSrc: '../imagenes/samuraiMack/Attack1.png',
-      framesMax: 6
+      imageSrc: '../imagenes/Medieveal/Attack1.png',
+      framesMax: 4
     },
     takeHit: {
-      imageSrc: '../imagenes/samuraiMack/Take Hit - white silhouette.png',
+      imageSrc: '../imagenes/Medieveal/Hit.png',
       framesMax: 4
     },
     death: {
-      imageSrc: '../imagenes/samuraiMack/Death.png',
+      imageSrc: '../imagenes/Medieveal/Death.png',
       framesMax: 6
     }
   },
   attackBox: {
     offset: {
-      x: 100,
+      x: 270,
       y: 50
     },
-    width: 160,
-    height: 50
+    width: 170,
+    height: 100
   }
 })
 
@@ -100,50 +101,50 @@ const enemy = new Fighter({
     x: -50,
     y: 0
   },
-  imageSrc: '../imagenes/kenji/Idle.png',
-  framesMax: 4,
-  scale: 2.5,
+  imageSrc: '../imagenes/Medieval Warrior Pack 2/Idle.png',
+  framesMax: 8,
+  scale: 4.8,
   offset: {
     x: 215,
-    y: 167
+    y: 137
   },
   sprites: {
     idle: {
-      imageSrc: '../imagenes/kenji/Idle.png',
-      framesMax: 4
+      imageSrc: '../imagenes/Medieval Warrior Pack 2/Idle.png',
+      framesMax: 8
     },
     run: {
-      imageSrc: '../imagenes/kenji/Run.png',
+      imageSrc: '../imagenes/Medieval Warrior Pack 2/Run.png',
       framesMax: 8
     },
     jump: {
-      imageSrc: '../imagenes/kenji/Jump.png',
+      imageSrc: '../imagenes/Medieval Warrior Pack 2/Jump.png',
       framesMax: 2
     },
     fall: {
-      imageSrc: '../imagenes/kenji/Fall.png',
+      imageSrc: '../imagenes/Medieval Warrior Pack 2/Fall.png',
       framesMax: 2
     },
     attack1: {
-      imageSrc: '../imagenes/kenji/Attack1.png',
+      imageSrc: '../imagenes/Medieval Warrior Pack 2/Attack1.png',
       framesMax: 4
     },
     takeHit: {
-      imageSrc: '../imagenes/kenji/Take hit.png',
-      framesMax: 3
+      imageSrc: '../imagenes/Medieval Warrior Pack 2/Take Hit.png',
+      framesMax: 4
     },
     death: {
-      imageSrc: '../imagenes/kenji/Death.png',
-      framesMax: 7
+      imageSrc: '../imagenes/Medieval Warrior Pack 2/Death.png',
+      framesMax: 6
     }
   },
   attackBox: {
     offset: {
-      x: -170,
+      x: 30,
       y: 50
     },
     width: 170,
-    height: 50
+    height: 100
   }
 })
 
