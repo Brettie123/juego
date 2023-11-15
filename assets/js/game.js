@@ -5,8 +5,15 @@ canvas.width = 1024
 canvas.height = 576
 
 c.fillRect(0, 0, canvas.width, canvas.height)
-
 const gravity = 0.5
+
+let miaudio = new Audio ("../Dramatic Music.mp3")
+miaudio.src="../Dramatic Music.mp3",
+miaudio.currenttime=10,
+miaudio.volume= 0.5,
+miaudio.playbackrate=1.5,
+miaudio.loop = true
+miaudio.play();
 
 const background = new Sprite({
   position: {
@@ -41,7 +48,7 @@ const player = new Fighter({
     y: 0
   },
   imageSrc: '../imagenes/Medieveal/Idle.png',
-  framesMax: 6,
+  framesMax: 9,
   scale: 2.7,
   offset: {
     x: 0,
@@ -70,11 +77,11 @@ const player = new Fighter({
     },
     takeHit: {
       imageSrc: '../imagenes/Medieveal/Hit.png',
-      framesMax: 4
+      framesMax: 3
     },
     death: {
       imageSrc: '../imagenes/Medieveal/Death.png',
-      framesMax: 6
+      framesMax: 9
     }
   },
   attackBox: {
@@ -140,7 +147,7 @@ const enemy = new Fighter({
   },
   attackBox: {
     offset: {
-      x: 30,
+      x: -10,
       y: 50
     },
     width: 170,
@@ -234,12 +241,9 @@ function animate() {
   }
 
   if (
-    rectangularCollision({
-      rectangle1: enemy,
-      rectangle2: player
-    }) &&
+
     enemy.isAttacking &&
-    enemy.framesCurrent === 2
+    enemy.framesCurrent === 4
   ) {
     player.takeHit()
     enemy.isAttacking = false
@@ -250,7 +254,7 @@ function animate() {
   }
 
 
-  if (enemy.isAttacking && enemy.framesCurrent === 2) {
+  if (enemy.isAttacking && enemy.framesCurrent === 4) {
     enemy.isAttacking = false
   }
 
