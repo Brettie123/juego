@@ -7,13 +7,13 @@ canvas.height = 576
 c.fillRect(0, 0, canvas.width, canvas.height)
 const gravity = 0.5
 
-let miaudio = new Audio ("../Dramatic Music.mp3")
+/*let miaudio = new Audio ("../Dramatic Music.mp3")
 miaudio.src="../Dramatic Music.mp3",
 miaudio.currenttime=10,
 miaudio.volume= 0.5,
 miaudio.playbackrate=1.5,
 miaudio.loop = true
-miaudio.play();
+miaudio.play();*/
 
 const background = new Sprite({
   position: {
@@ -24,6 +24,7 @@ const background = new Sprite({
   scale: 3.6
 })
 
+//si saco esto se rompe el programa :)
 const shop = new Sprite({
   position: {
     x: 600,
@@ -33,6 +34,7 @@ const shop = new Sprite({
   scale: 2.75,
   framesMax: 6
 })
+//todo eso
 
 const player = new Fighter({
   position: {
